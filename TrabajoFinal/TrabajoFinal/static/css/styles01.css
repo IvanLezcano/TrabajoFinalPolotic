@@ -1,0 +1,29 @@
+.flex-container{
+    width: 50vw;
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    /* alinear eje principal */
+    flex-direction:row;
+    justify-content: center;
+    /* alinear eje secundario */
+    align-items: flex-end;
+    flex-flow: row nowrap;
+
+
+}
+.flex-item{
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    border: 2px solid black;
+}
+#div-especial{
+    align-self: flex-start;
+    flex-grow:5;
+    order:-1
+
+}
+#div-especial-2{
+    flex-grow: 3;
+}

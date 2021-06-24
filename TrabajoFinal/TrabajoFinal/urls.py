@@ -16,6 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from . import views
+
+from TrabajoFinal.views import calculaEdad, Saludo, index, productos
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', Saludo),
+    path('edades/<int:edad>/<int:anio>', calculaEdad),
+    path('', Saludo),
+    path('productos',productos),
+
+
+
 ]
